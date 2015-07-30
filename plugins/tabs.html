@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Cool Website</title>
+    <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.17.2/build/cssreset/cssreset-min.css">
+    <script src="./jquery-1.11.3.min.js"></script>
+    <script src="./tabs.js"></script>
+    <link href="./tabs.css" rel="stylesheet" type="text/css">
+    <script>
+      $(function() {
+        $('.tabs').tabs();
+      });
+    </script>
+  </head>
+
+  <body>
+    <ul class="tabs" data-content-tabs="#content-tabs">
+      <li><a class="active" href="javascript:void(0);" for='#GermanShepherd'>German Shepherd</a></li>
+      <li><a href="javascript:void(0);" for='#Corgi'>Corgi</a></li>
+      <li><a href="javascript:void(0);" for='#Spaniel'>Spaniel</a></li>
+    </ul>
+    
+    <div id="content-tabs">
+      <div id = "GermanShepherd" class="active tab-pane">
+        <p>
+          German Shepherd
+        </p>
+      </div>
+      <div id = "Corgi" class="tab-pane">
+        <p>
+          Corgi
+        </p>
+      </div>
+      <div id = "Spaniel" class="tab-pane">
+        <p>
+          Spaniel
+        </p>
+      </div>
+    </div>
+  </body>
+
+</html>
